@@ -4,9 +4,10 @@
 import marlo
 
 client_pool = [('127.0.0.1', 10000)]
-join_tokens = marlo.make('MarLo-FindTheGoal-v0',
+join_tokens = marlo.make('MarLo-DefaultWorld-v0',
                          params={
-                             "client_pool": client_pool
+                             "client_pool": client_pool,
+                             "agent_names": ["Agent-0"]
                          })
 # As this is a single agent scenario,
 # there will just be a single token
